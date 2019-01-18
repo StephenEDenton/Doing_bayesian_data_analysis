@@ -50,7 +50,7 @@ trajectory = np.zeros((traj_length, 2))
 # Specify where to start the trajectory
 trajectory[0, ] = [0.50, 0.50] # arbitrary start values of the two param's
 # Specify the burn-in period.
-burn_in = np.ceil(.1 * traj_length) # arbitrary number
+burn_in = np.ceil(.1 * traj_length).astype(int) # arbitrary number
 # Initialize accepted, rejected counters, just to monitor performance.
 n_accepted = 0
 n_rejected = 0
